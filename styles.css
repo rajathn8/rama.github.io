@@ -520,10 +520,15 @@ h1 .cred { color: var(--gold); font-weight: 600; }
   font-weight: 500;
 }
 .tl-body ul { margin: 0; padding-left: 18px; color: var(--ink-soft); font-size: 15px; }
-.tl-body ul li { margin-bottom: 4px; }
+.tl-body ul li {
+  margin-bottom: 4px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
 .tl-body strong { color: var(--ink); font-weight: 600; }
 
-@media (max-width: 700px) {
+/* Mid-widths: collapse the date column earlier so cards have room */
+@media (max-width: 960px) {
   .timeline::before { left: 10px; }
   .tl-item { grid-template-columns: 1fr; gap: 8px; }
   .tl-item::before { left: 4px; top: 4px; }
