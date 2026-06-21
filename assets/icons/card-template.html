@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  @page { size: 85mm 55mm; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    width: 85mm; height: 55mm;
+    background: #0B2447;
+    background-image:
+      radial-gradient(80mm 50mm at 110% -20%, rgba(200,164,92,0.22), transparent 60%),
+      linear-gradient(135deg, #0B2447, #071a36);
+    color: #fff;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 28mm;
+    padding: 5mm;
+    gap: 4mm;
+  }
+  .left { display: flex; flex-direction: column; justify-content: space-between; }
+  h1 {
+    font-family: Georgia, serif;
+    font-size: 13pt;
+    margin: 0;
+    line-height: 1.1;
+    letter-spacing: 0.3px;
+  }
+  h1 span { color: #C8A45C; font-weight: 600; }
+  .title {
+    font-size: 7.5pt;
+    color: #C8A45C;
+    margin: 1mm 0 0;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .creds {
+    font-size: 7pt;
+    color: #d8e0f0;
+    margin: 1.5mm 0;
+    line-height: 1.4;
+  }
+  .contact {
+    font-size: 7pt;
+    color: #b8c4dc;
+    line-height: 1.5;
+  }
+  .contact strong { color: #fff; font-weight: 600; }
+  .accent {
+    width: 4px; height: 9mm; background: #C8A45C; border-radius: 2px;
+    margin-bottom: 2mm;
+  }
+  .right {
+    background: #fff;
+    border-radius: 2mm;
+    padding: 2mm;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    gap: 1mm;
+  }
+  .qr-img { width: 100%; height: auto; }
+  .qr-label {
+    font-size: 5.5pt;
+    color: #0B2447;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+  }
+</style>
+</head>
+<body>
+  <div class="left">
+    <div>
+      <div class="accent"></div>
+      <h1>Rama H. S. Rao<span>, CEng</span></h1>
+      <p class="title">Senior Project &amp; Highway Engineer</p>
+      <p class="creds">FCIHT &middot; FIHE &middot; CDM 2015 PD &middot; RSA 1&ndash;2 &middot; 25+ years</p>
+    </div>
+    <div class="contact">
+      <strong>+44 7714 102248</strong><br>
+      rama_h_s@hotmail.com<br>
+      <strong>engineer-rama-rao.github.io</strong>
+    </div>
+  </div>
+  <div class="right">
+    <img class="qr-img" src="qr-portfolio.svg" alt="QR">
+    <div class="qr-label">SCAN FOR PORTFOLIO &amp; CV</div>
+  </div>
+</body>
+</html>

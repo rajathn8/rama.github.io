@@ -113,6 +113,48 @@
     else if (e.key === 'ArrowLeft') step(-1);
     else if (e.key === 'ArrowRight') step(1);
   });
+  // ----- Send-Rama-a-role intake form -----
+  var intakeForm = document.getElementById('intake-form');
+  if (intakeForm) {
+    intakeForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var f = intakeForm;
+      var v = function (n) { return (f.elements[n] && f.elements[n].value || '').trim(); };
+      var name = v('name');
+      var company = v('company');
+      var phone = v('phone');
+      var email = v('email');
+      var role = v('role');
+      var location = v('location');
+      var type = v('type');
+      var rate = v('rate');
+      var start = v('start');
+      var desc = v('desc');
+      var subject = '[Role for Rama] ' + (role || 'Senior Highway Engineer') + ' — ' + (company || 'opportunity');
+      var body =
+        'Hi Rama,\n\n' +
+        'I have a role you might be a fit for.\n\n' +
+        '─────────────────────────────\n' +
+        'Role:        ' + role + '\n' +
+        'Company:     ' + company + '\n' +
+        'Location:    ' + location + '\n' +
+        'Type:        ' + type + '\n' +
+        'Salary/rate: ' + rate + '\n' +
+        'Start date:  ' + start + '\n' +
+        '─────────────────────────────\n\n' +
+        (desc ? 'Description:\n' + desc + '\n\n' : '') +
+        'My contact details:\n' +
+        '  Name:    ' + name + '\n' +
+        (phone ? '  Phone:   ' + phone + '\n' : '') +
+        '  Email:   ' + email + '\n\n' +
+        'Looking forward to hearing back — happy to call any time.\n\n' +
+        'Best regards,\n' +
+        name;
+      var href = 'mailto:rama_h_s@hotmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+      window.location.href = href;
+    });
+  }
+
   // ----- Copy link button -----
   var copyBtn = document.getElementById('copy-link-btn');
   var copyLabel = document.getElementById('copy-link-label');

@@ -121,6 +121,7 @@
         <li><a href="#writing">Writing</a></li>
         <li><a href="#certifications">Credentials</a></li>
         <li><a href="#fit">Hire</a></li>
+        <li><a href="#intake">Send role</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -160,7 +161,15 @@
         </a>
         <a class="btn btn-ghost" href="tel:+447714102248">
           <svg viewBox="0 0 24 24" aria-hidden="true" width="18" height="18"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
-          +44 7714 102248
+          Call
+        </a>
+        <a class="btn btn-ghost" href="https://wa.me/447714102248?text=Hi%20Rama%20%E2%80%94%20I%27m%20%5Byour%20name%5D%20at%20%5Bcompany%5D.%20We%27re%20looking%20for%20a%20%5Brole%5D%20%E2%80%94%20could%20we%20chat%3F" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true" width="18" height="18"><path fill="currentColor" d="M.06 24l1.69-6.16A11.86 11.86 0 0 1 0 11.95C0 5.36 5.37 0 11.95 0c3.2 0 6.2 1.25 8.46 3.51A11.83 11.83 0 0 1 23.9 11.96c0 6.59-5.36 11.95-11.95 11.95a12 12 0 0 1-5.71-1.45L.06 24zm6.6-3.81l.36.22a9.9 9.9 0 0 0 5.05 1.38c5.49 0 9.95-4.46 9.95-9.95a9.91 9.91 0 0 0-9.93-9.95C6.5 1.89 2.05 6.35 2.05 11.84c0 1.88.53 3.72 1.53 5.3l.24.38l-1 3.65l3.84-.98z"/></svg>
+          WhatsApp
+        </a>
+        <a class="btn btn-ghost" href="sms:+447714102248?body=Hi%20Rama%20%E2%80%94%20I%27m%20%5Byour%20name%5D%20at%20%5Bcompany%5D.%20We%27re%20hiring%20for%20a%20%5Brole%5D.%20Could%20you%20call%20when%20free%3F">
+          <svg viewBox="0 0 24 24" aria-hidden="true" width="18" height="18"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M21 11.5a8.38 8.38 0 0 1-.9 3.8a8.5 8.5 0 0 1-7.6 4.7a8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8a8.5 8.5 0 0 1 4.7-7.6a8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z"/></svg>
+          Text
         </a>
         <a class="btn btn-ghost" href="https://www.linkedin.com/in/rama-rao-39035815/" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" aria-hidden="true" width="18" height="18"><path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.22 8h4.56v14H.22zM8 8h4.36v1.91h.06c.61-1.15 2.1-2.36 4.32-2.36c4.62 0 5.47 3.04 5.47 6.99V22h-4.56v-6.18c0-1.47-.03-3.37-2.05-3.37c-2.06 0-2.37 1.6-2.37 3.26V22H8z"/></svg>
@@ -614,9 +623,43 @@
   </div>
 </section>
 
+<section id="intake" class="section">
+  <div class="container">
+    <h2 class="section-title"><span>08</span>Send Rama a role</h2>
+    <p class="section-intro">A 60-second form for recruiters and hiring managers. Fill it in &mdash; it opens an email pre-filled with everything she needs to know, ready to send.</p>
+
+    <form class="intake-form" id="intake-form">
+      <div class="intake-grid">
+        <label>Your name <input type="text" name="name" required></label>
+        <label>Company / agency <input type="text" name="company" required></label>
+        <label>Phone <input type="tel" name="phone"></label>
+        <label>Your email <input type="email" name="email" required></label>
+        <label>Role title <input type="text" name="role" required></label>
+        <label>Location <input type="text" name="location" placeholder="e.g. London / Hybrid / Site-based"></label>
+        <label>Permanent / contract / interim?
+          <select name="type">
+            <option>Permanent</option>
+            <option>Fixed-term contract</option>
+            <option>Day-rate contract</option>
+            <option>Interim</option>
+            <option>Consultancy</option>
+          </select>
+        </label>
+        <label>Salary or day rate <input type="text" name="rate" placeholder="e.g. £60-70k / £450 per day"></label>
+        <label>Start date <input type="text" name="start" placeholder="Immediate / 4 weeks / by [date]"></label>
+        <label class="full">Brief role description <textarea name="desc" rows="4" placeholder="A few sentences on the team, project, and what you're looking for."></textarea></label>
+      </div>
+      <button type="submit" class="btn btn-primary intake-submit">
+        Open pre-filled email to Rama &rarr;
+      </button>
+      <p class="intake-note">No data is stored. The form just builds an email in your default mail app addressed to <strong>rama_h_s@hotmail.com</strong> so you can review and hit send.</p>
+    </form>
+  </div>
+</section>
+
 <section id="contact" class="section contact-section">
   <div class="container">
-    <h2 class="section-title light"><span>08</span>Get in touch</h2>
+    <h2 class="section-title light"><span>09</span>Get in touch</h2>
     <p class="contact-lead">Recruiters, hiring managers, consultancies &mdash; please do reach out. I'm available now and happy to discuss any of the role types above across London, the South East, or anywhere in the UK.</p>
 
     <div class="contact-grid">
@@ -629,8 +672,16 @@
         <strong>rama_h_s@hotmail.com</strong>
       </a>
       <a class="contact-card" href="tel:+447714102248">
-        <span class="contact-label">Mobile</span>
+        <span class="contact-label">Phone</span>
         <strong>+44 7714 102248</strong>
+      </a>
+      <a class="contact-card" href="https://wa.me/447714102248?text=Hi%20Rama%20%E2%80%94%20we%27re%20hiring%20for%20a%20%5Brole%5D.%20Are%20you%20free%20to%20chat%3F" target="_blank" rel="noopener">
+        <span class="contact-label">WhatsApp</span>
+        <strong>Message instantly &rarr;</strong>
+      </a>
+      <a class="contact-card" href="sms:+447714102248?body=Hi%20Rama%20%E2%80%94%20I%27m%20%5Byour%20name%5D%20at%20%5Bcompany%5D.%20We%27re%20hiring%20for%20a%20%5Brole%5D.">
+        <span class="contact-label">SMS / iMessage</span>
+        <strong>Send a text &rarr;</strong>
       </a>
       <a class="contact-card" href="https://www.linkedin.com/in/rama-rao-39035815/" target="_blank" rel="noopener">
         <span class="contact-label">LinkedIn</span>
@@ -691,6 +742,10 @@
       <a href="cv/Rama-Rao-CV-1page.pdf" download>1-page summary</a>
       &middot;
       <a href="cv/Rama-Rao-CV.docx" download>CV (Word)</a>
+      &middot;
+      <a href="assets/Rama-Rao.vcf" download>vCard</a>
+      &middot;
+      <a href="assets/business-card.pdf" download>Business card (PDF)</a>
       &middot;
       <a href="https://www.linkedin.com/in/rama-rao-39035815/" target="_blank" rel="noopener">LinkedIn</a>
     </p>
